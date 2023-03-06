@@ -20,7 +20,7 @@ window:
   # Remove buttons
   decorations: none
   # Open in full screen 
-  startup_mode: SimpleFullscreen
+  startup_mode: FullScreen
   # Dimensions if not SimpleFullscreen
   dimensions:
     columns: 140
