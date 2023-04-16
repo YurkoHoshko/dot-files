@@ -27,6 +27,7 @@ window:
     lines: 38
   # Make background slightly transparent
   opacity: 0.92
+  option_as_alt: OnlyLeft
 
 cursor:
   # Block Underline or Beam

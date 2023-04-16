@@ -17,4 +17,8 @@
 	- `ElixirLS` should be installed in .config and `language-server.sh` should get renamed to `elixir-ls` for Helix to work
 8. Lazygit is awesome - definite add!
 	- `brew install lazygit`
+9. Zk for notes
+	- `brew install zk`
+	- `brew install fzf`
+	- `brew install bat`
 

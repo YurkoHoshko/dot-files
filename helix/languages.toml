@@ -1,3 +1,15 @@
 [[language]]
 name = "elixir"
 auto-format = true
+
+[[language]]
+name = "markdown"
+scope = "source.md"
+injection-regex = "md|markdown"
+file-types = ["md", "markdown"]
+roots = [".zk"]
+language-server = { command = "zk", args=["lsp"] }
+
+[[grammar]]
+name = "markdown"
+source = { git = "https://github.com/MDeiml/tree-sitter-markdown", rev = "7e7aa9a25ca9729db9fe22912f8f47bdb403a979", subpath = "tree-sitter-markdown" }
