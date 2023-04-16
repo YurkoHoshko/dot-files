@@ -1,0 +1,27 @@
+theme = "gruvbox-own"
+
+[editor]
+mouse = false
+shell = ["/bin/zsh"]
+auto-format = true
+bufferline = "multiple"
+
+[editor.statusline]
+center = ["version-control"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1 

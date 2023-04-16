@@ -10,4 +10,5 @@ and not set -q TMUX
 end
 
 source (brew --prefix asdf)/libexec/asdf.fish
-
+fish_add_path ~/.cargo/bin/
+fish_add_path ~/.config/elixir-ls

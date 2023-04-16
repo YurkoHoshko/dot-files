@@ -20,7 +20,7 @@ window:
   # Remove buttons
   decorations: none
   # Open in full screen 
-  startup_mode: SimpleFullScreen
+  startup_mode: "SimpleFullscreen"
   # Dimensions if not SimpleFullscreen
   dimensions:
     columns: 140
@@ -34,6 +34,7 @@ cursor:
 
 # Font configuration
 font:
+  size: 13
   # Normal (roman) font face
   normal:
     # Font family

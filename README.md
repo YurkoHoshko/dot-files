@@ -12,4 +12,9 @@
 5. Install TMUX via HomeBrew
 	- `ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf`
 6. Clone this repo into ~/.config folder
+7. NVim is out, Helix is in :)
+	- `brew install helix`
+	- `ElixirLS` should be installed in .config and `language-server.sh` should get renamed to `elixir-ls` for Helix to work
+8. Lazygit is awesome - definite add!
+	- `brew install lazygit`
 

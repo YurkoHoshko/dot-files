@@ -1,0 +1,5 @@
+inherits = "gruvbox"
+
+
+"ui.background" = {} # make background transparent
+"comment" = { fg = "gray1", modifiers = ["bold"]  } # italic does not work well
