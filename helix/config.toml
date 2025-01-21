@@ -5,6 +5,8 @@ mouse = false
 shell = ["fish", "-c"]
 auto-format = true
 bufferline = "multiple"
+soft-wrap.enable = true
+popup-border = "all"
 
 [editor.statusline]
 center = ["version-control"]
@@ -16,6 +18,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+git-ignore = true
 
 [editor.lsp]
 display-messages = true
@@ -25,3 +28,10 @@ display-inlay-hints = true
 render = true
 character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1 
+
+[keys.insert]
+"A-x" = "normal_mode"     # Maps Alt-X to enter normal mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+
+[keys.normal]
+# "space" = { G = ":sh zellij run -cf -x 10% -y 10% --height 80% --width 80% -- lazygit"}
