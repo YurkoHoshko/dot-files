@@ -4,6 +4,10 @@ command = "zls"
 [language-server.elixir]
 command = "elixir-ls"
 
+[language-server.refactorex]
+command = "/Users/yurko/Code/refactorex/bin/start"
+args = ["--stdio"]
+
 [language-server.tailwind-heex]
 command = "tailwindcss-language-server"
 args = ["--stdio"]
@@ -11,6 +15,14 @@ args = ["--stdio"]
 [language-server.gleam-lsp]
 command = "gleam"
 args = ["lsp"]
+
+[language-server.iwe]
+command = "iwes"
+
+[[language]]
+name = "markdown"
+language-servers = [ "iwe" ] # you might want more LSPs in here
+auto-format = true
 
 [[language]]
 name = "gleam"
@@ -25,7 +37,7 @@ auto-format = false
 [[language]]
 name = "elixir"
 auto-format = true
-language-servers = ["elixir"]
+language-servers = ["elixir", "refactorex"]
 language-id = "phoenix-heex"
 
 [[language]]
@@ -38,15 +50,3 @@ auto-format = true
 name = "zig"
 language-servers = [ "zls" ]
 
-
-# [[language]]
-# name = "markdown"
-# scope = "source.md"
-# injection-regex = "md|markdown"
-# file-types = ["md", "markdown"]
-# roots = [".zk"]
-# language-server = { command = "zk", args=["lsp"] }
-
-[[grammar]]
-name = "markdown"
-source = { git = "https://github.com/MDeiml/tree-sitter-markdown", rev = "7e7aa9a25ca9729db9fe22912f8f47bdb403a979", subpath = "tree-sitter-markdown" }

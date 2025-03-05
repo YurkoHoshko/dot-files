@@ -1,8 +1,8 @@
-theme = "gruvbox-own"
+theme = "gruvbox"
 
 [editor]
 mouse = false
-shell = ["fish", "-c"]
+shell = ["nu", "--stdin", "-l", "-c"]
 auto-format = true
 bufferline = "multiple"
 soft-wrap.enable = true
@@ -34,4 +34,15 @@ skip-levels = 1
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal]
-# "space" = { G = ":sh zellij run -cf -x 10% -y 10% --height 80% --width 80% -- lazygit"}
+# Git
+h.b = ":sh git blame -n %{buffer_name} -L %{cursor_line},%{cursor_line}"
+
+# AI
+space.space.a = "@:sh ai (r#'<C-r>.'#)<ret>"
+
+# Elixir
+
+space.space.c = ":sh mix compile"
+space.space.t = ":sh zellij action new-pane  -f -- mix test %{buffer_name} --trace"
+space.space.T = ":sh zellij action new-pane  -f -- mix test %{buffer_name}:%{cursor_line} --trace"
+space.space.F = ":sh zellij action new-pane  -f -- mix test"
